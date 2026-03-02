@@ -32,7 +32,7 @@ export default function LinkList({links,onDelete}) {
                                         rel="noopener noreferrer"
                                         className={"text-black font-medium hover:underline break-all"}
                                     >
-                                        ${BASE_URL}/${link.short_url}
+                                        {BASE_URL}/{link.short_url}
                                     </a>
 
                                 </p>
