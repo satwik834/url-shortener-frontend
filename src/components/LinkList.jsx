@@ -1,6 +1,6 @@
 import React from 'react'
 import {FiTrash2} from "react-icons/fi";
-
+const BASE_URL = import.meta.env.VITE_API_URL
 export default function LinkList({links,onDelete}) {
 
     return (
@@ -27,12 +27,12 @@ export default function LinkList({links,onDelete}) {
                                 <p>
                                     Short:{" "}
                                     <a
-                                        href={`http://localhost:8000/${link.short_url}`}
+                                        href={`${BASE_URL}/${link.short_url}`}
                                         target={"_blank"}
                                         rel="noopener noreferrer"
                                         className={"text-black font-medium hover:underline break-all"}
                                     >
-                                        http://localhost:8000/${link.short_url}
+                                        ${BASE_URL}/${link.short_url}
                                     </a>
 
                                 </p>
