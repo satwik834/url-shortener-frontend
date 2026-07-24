@@ -1,6 +1,6 @@
 import React from 'react'
 import {FiTrash2} from "react-icons/fi";
-const BASE_URL = import.meta.env.VITE_API_URL
+const BASE_URL = import.meta.env.VITE_API_URL || ""
 export default function LinkList({links,onDelete}) {
 
     return (
